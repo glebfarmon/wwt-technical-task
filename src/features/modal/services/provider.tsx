@@ -1,6 +1,5 @@
 import { type ReactNode, Suspense } from 'react'
 
-import { ModalOverlay } from '@features/modal/overlay'
 import { useStoreSelectors } from '@features/modal/services/store'
 
 export const ModalProvider = ({ children }: { children: ReactNode }) => {
@@ -9,15 +8,16 @@ export const ModalProvider = ({ children }: { children: ReactNode }) => {
 	return (
 		<>
 			{children}
-			{typeof window !== 'undefined' && modals.length ? (
-				<ModalOverlay power={modals.length}>
-					<Suspense fallback={null}>
-						{modals.map(({ id, component: LazyModal }) => (
-							<LazyModal key={id} />
-						))}
-					</Suspense>
-				</ModalOverlay>
-			) : null}
+			{typeof window !== 'undefined' && modals.length
+				? modals.map(({ id, component: LazyModal }) => (
+						<Suspense
+							fallback={null}
+							key={id}
+						>
+							<LazyModal />
+						</Suspense>
+				  ))
+				: null}
 		</>
 	)
 }

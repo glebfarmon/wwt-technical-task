@@ -15,7 +15,8 @@ const Modal = ({ children, size, ...props }: ModalProps) => {
 			size={size || { base: 'full', md: 'xl' }}
 			{...props}
 		>
-			<ModalOverlay background={'inherit'} />
+			{/* <ModalOverlay background={'inherit'} /> */}
+			<ModalOverlay />
 			<ModalContent>
 				<ModalCloseButton size={'lg'} />
 				{children}
