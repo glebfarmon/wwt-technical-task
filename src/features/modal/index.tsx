@@ -15,7 +15,6 @@ const Modal = ({ children, size, ...props }: ModalProps) => {
 			size={size || { base: 'full', md: 'xl' }}
 			{...props}
 		>
-			{/* <ModalOverlay background={'inherit'} /> */}
 			<ModalOverlay />
 			<ModalContent>
 				<ModalCloseButton size={'lg'} />
@@ -25,7 +24,6 @@ const Modal = ({ children, size, ...props }: ModalProps) => {
 	)
 }
 
-Modal.displayName = 'Modal'
 Modal.Header = ModalHeader
 Modal.Body = ModalBody
 Modal.Footer = ModalFooter
