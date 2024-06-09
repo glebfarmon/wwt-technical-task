@@ -1,0 +1,10 @@
+{
+	"open": "Open filters",
+	"title": "Filter",
+	"apply": "Apply",
+	"clear_params": "Clear all parameters",
+	"confirm_title": "Do you want to apply new filter",
+	"accept_title": "Apply new filter",
+	"cancel_title": "Use old filter",
+	"selected_filters": "Selected filters:"
+}

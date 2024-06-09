@@ -44,6 +44,9 @@ const sizes = {
 		}
 	},
 	lg: {
+		dialogContainer: {
+			padding: '5rem'
+		},
 		dialog: {
 			maxW: '54.875rem'
 		}
@@ -51,6 +54,11 @@ const sizes = {
 	xl: {
 		dialog: {
 			maxW: '100%'
+		}
+	},
+	full: {
+		dialogContainer: {
+			padding: '0'
 		}
 	}
 }

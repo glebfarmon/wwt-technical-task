@@ -26,6 +26,8 @@
 			"@store/*": ["./src/store/*"],
 			"@temp/*": ["./src/temp/*"],
 			"@utils/*": ["./src/utils/*"],
+			"@features/*": ["./src/features/*"],
+			"@hooks/*": ["./src/hooks/*"],
 
 			/* Imports like '@constants' */
 			"@api": ["./src/api"],
@@ -38,6 +40,8 @@
 			"@store": ["./src/store"],
 			"@temp": ["./src/temp"],
 			"@utils": ["./src/utils"],
+			"@features": ["./src/features"],
+			"@hooks": ["./src/hooks"],
 			"@/*": ["./src/*"]
 		},
 		/* Linting */
